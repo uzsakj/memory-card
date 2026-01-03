@@ -1,16 +1,58 @@
-# React + Vite
+# React Memory Card Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, customizable Memory Card Game built with React and Vite. This project is designed to be easily forked and customized with your own themes.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Dynamic Asset Loading**: The game automatically generates cards based on the images found in the assets folder.
+- **Score & Move Tracking**: Keeps track of your performance.
+- **Responsive Design**: Works on desktop and mobile.
+- **Tailwind CSS**: Styled with utility-first CSS.
 
-## React Compiler
+## 🛠️ Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
 
-## Expanding the ESLint configuration
+- Node.js (v14 or higher recommended)
+- npm or yarn
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/uzsakj/memory-card.git
+    cd memory-card-game
+    ```
+
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+
+3.  Start the development server:
+    ```bash
+    npm run dev
+    ```
+
+## 🎨 Customization
+
+This project is built to be easily themed. You can change the card images without touching the code logic.
+
+1.  Navigate to `src/assets`.
+2.  Delete the existing icon files.
+3.  Add your own images.
+    - **Naming Convention**: Files must end with `_icon` (e.g., `cat_icon.png`, `dog_icon.jpg`).
+    - **Supported Formats**: `.png`, `.jpg`, `.jpeg`, `.svg`.
+
+    ## Embed
+
+You can embed this game anywhere:
+
+<iframe src="https://your-game.vercel.app" width="800" height="600"></iframe>
+
+
+The game will automatically detect these files, create pairs for them, and shuffle them for the game board.
+
+## 📄 License
+
+This project is open source and available under the MIT License.
