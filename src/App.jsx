@@ -23,7 +23,7 @@ function App() {
   } = useGameLogic(cardValues)
 
   return (
-    <div className="min-h-screen bg-slate-900 text-white flex flex-col items-center py-10">
+    <div className="min-h-screen bg-slate-900 text-white flex flex-col items-center py-10 ">
       <GameHeader score={score} moves={moves} onReset={initializteGame} />
       {isGameComplete && <WinMessage moves={moves} />}
       <div className="grid grid-cols-4 gap-2 sm:gap-4 mt-4 sm:mt-8 w-full max-w-lg px-2 sm:px-4">
